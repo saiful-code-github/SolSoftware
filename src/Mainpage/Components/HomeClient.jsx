@@ -12,19 +12,19 @@ const HomeClient = () => {
       para: '  “ I have been a keen observer of how the digital realm has been flourishing in our neighbour countries and BD has s some amazing progress over the years. I had previously made a list of the Digital Marketing agencies. ”',
       name: "Andrew Robertson",
       profession: "Marketing",
-      icons: new Array(5).fill(<i className='bi bi-star-fill'></i>)
+      icons:2.2
     },
     {
       para: ' “ I have been a keen observer of how the digital realm has been flourishing in our neighbour countries and BD has s some amazing progress over the years. I had previously made a list of the Digital Marketing agencies. ”',
       name: "Sarah Mitchell",
       profession: "Digital Strategist",
-      icons: new Array(5).fill(<i className='bi bi-star-fill'></i>)
+      icons: 4.5
     },
     {
       para: ' “ I have been a keen observer of how the digital realm has been flourishing in our neighbour countries and BD has s some amazing progress over the years. I had previously made a list of the Digital Marketing agencies. ”',
       name: "John Doe",
       profession: "Consultant",
-      icons: new Array(5).fill(<i className='bi bi-star-fill'></i>)
+      icons: 3.3
     }
   ];
 
@@ -67,7 +67,22 @@ const HomeClient = () => {
       }
     }
   };
-
+//  renderRating
+const renderRating = (icon) => {
+    let stars = [];
+    for (let i = 0; i < 5; i++) {
+        if(icon > 0.5){
+          stars.push(<i key={i} className="bi bi-star-fill"></i>);
+          icon--;
+        }else if (icon > 0 && icon < 1){
+          stars.push(<i key={"half"} className="bi bi-star-half"></i>);
+          icon--;
+        }else{
+          stars.push(<i key={`empty${i}`} className="bi bi-star"></i>)
+        }
+    }
+    return stars;
+}
   return (
     <section className='client'>
       <CContainer>
@@ -87,11 +102,10 @@ const HomeClient = () => {
                       <h4 className='font-semibold'>{item.name}</h4>
                       <p className='text-sm text-gray-500'>{item.profession}</p>
                     </div>
-                    <ul className='flex space-x-1'>
-                      {item.icons.map((icon, idx) => (
-                        <li key={idx}>{icon}</li>
-                      ))}
-                    </ul>
+                    <ul className='flex space-x-1 text-yellow-500'>
+                     {renderRating(item.icons)}
+                       </ul>
+
                   </div>
                 </div>
               ))}
