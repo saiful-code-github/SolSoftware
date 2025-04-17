@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+
+/*  */
+:root{
+    /* font family */
+    --Roboto: "Roboto";
+    --Poppins: "Poppins";
+
+    /* global color */
+    --bg-blue: "#0554f2";
+    --black: '#1d1b19';
+    --gray: "#9297a0";
+    --sec-bg: "#eff4fa";
+
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/* header */
+.top-header{
+    padding: 5px 0;
+}
+.top-header ul{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.top-header ul li{
+    margin-right: 20px;
+}
+.top-header ul li a{
+    font-size: 16px; 
+    font-weight: 500;
+    color: var(--bg-blue) !important;
+    text-decoration: none;
+}
+.top-header ul li i{
+    padding-right: 5px;
+}
+.top-header h4{
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+.top-header .menu li{
+    padding-right: 5px !important;
+    margin-right: 0 !important;
+}
+.top-header .menu li a{
+    font-size: 14px;
+}
+
+/* bottom-header */
+.bottom-header ul li{
+    margin-right:20px;
+}
+.bottom-header ul li a{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+}
+.bottom-header ul li a:hover{
+    color: #fff !important;
+}
+.bottom-header .dropdown-menu {
+    padding-left: 15px;
+}
+.bottom-header .dropdown-menu a{
+    color: var(--black);
+}
+.bottom-header .dropdown-menu a:hover{
+    color: var(--black) !important;
+}
+/* Add these styles to your main CSS file */
+.button {
+    background: #fff;
+    border: 1px solid blue;
+    padding: 10px 35px;
+    border-radius: 6px;
+    color: blue; /* Changed the text color to blue for visibility */
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    transition: all .4s ease;
+    z-index: 2 !important;
+  }
+.button:hover{
+    color: #fff !important;
+}
+  .button::after {
+    position: absolute;
+    content: '';
+    top: -56px;
+    left: -91px;
+    width: 75px;
+    height: 172px;
+    transform: rotate(45deg);
+    background: blue !important;
+    display: block;
+    z-index: -1;
+    color: #fff !important;
+    transition: all .4s ease;
+}
+.button:hover::after {
+    width: 300px;
+    height: 300px;
+    top: -163px;
+    left: -122px;
+    color: #fff !important;
+}
+  .button:focus {
+    outline: none;
+  }
+  
+  .custom-class {
+    background: yellow;
+    border: 1px solid red;
+    color: red;
+  }
