@@ -1032,14 +1032,14 @@ footer {
     color: #0554f2;
     font-family: "Roboto";
 }
-.client1 h2 {
+.client h2 {
     font-size: 40px;
     font-weight: 600;
     text-transform: capitalize;
     font-family: 'Roboto';
     width: 28%;
 }
-.client1 p {
+.client p {
     font-size: 22px;
     font-weight: 400;
     color: #9297a0;
@@ -1048,7 +1048,7 @@ footer {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-.client1 h4 {
+.client h4 {
     font-size: 24px;
     font-weight: 600;
     font-family: "Roboto";
@@ -1056,7 +1056,7 @@ footer {
     color: #1d1b19;
     margin-bottom: 0;
 }
-.client1 p:last-child {
+.client p:last-child {
     font-size: 18px;
     font-weight: 500;
     color: #1d1b19;
