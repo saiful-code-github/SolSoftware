@@ -177,7 +177,7 @@ const Footer = () => {
                         <div>
                         <p>Copyright © 2025 Solutya Pvt. Ltd. All Rights Reserved</p>
                         </div>
-                           <div className='flex'>
+                           <div className='flex last-p'>
                               <p className='cursor-pointer'>Privacy Policy</p>
                               <p className='cursor-pointer'> Cookie Policy</p>
                            </div>

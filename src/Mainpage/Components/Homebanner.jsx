@@ -38,7 +38,7 @@ export const Homebanner = () => {
         return (
             <CCarouselItem key={index}>
             <CImage className="d-block w-100 h-[650px] object-cover" src={image} alt="slide 1" />
-            <CCarouselCaption className="d-none d-md-block mb-[100px]">
+            <CCarouselCaption className="d-md-block mb-[100px]">
                 <h3 className='animate__animated animate__backInLeft animate__delay-1s'>{heading}</h3>
                 <h1 className='animate__animated animate__lightSpeedInLeft animate__delay-2s'>{headingTwo}
                     <span className='animate__animated animate__lightSpeedInRight animate__delay-3s block'>{headingSub}</span> </h1>

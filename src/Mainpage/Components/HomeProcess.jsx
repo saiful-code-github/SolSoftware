@@ -27,7 +27,7 @@ const HomeProcess = () => {
               <img src={processImg} alt="" />
             </CCol>
             <CCol lg={6}>
-                <div style={{marginRight: "100px",marginTop: "70px"}}>
+                <div className='progessBox' style={{marginRight: "100px",marginTop: "70px"}}>
                 <h3>Buisness Process
                     </h3>
                     <h2>Easy Way Build Success your Buisness Plan

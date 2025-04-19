@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const HomeAbout = () => {
   return (
-    <section className='bg-[#eff4fa] pt-[100px] pb-[50px]' style={{paddingTop: "120px", paddingBottom: "50px"}}>
+    <section className='bg-[#eff4fa] pt-[100px] pb-[50px] aboutSec' style={{paddingTop: "120px", paddingBottom: "50px"}}>
         <CContainer>
                <CRow>
                    <CCol lg={6}>
@@ -31,7 +31,7 @@ const HomeAbout = () => {
                             </h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                             </p>
-                            <ul>
+                            <ul className='m-0 p-0'>
                             <li><i class="bi bi-check-square"></i>Development of Financial Models
                             </li> 
                             <li><i class="bi bi-check-square"></i>Nifty team is a diverse network of consultants

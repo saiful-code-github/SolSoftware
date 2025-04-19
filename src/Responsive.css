@@ -1,0 +1,171 @@
+/* responsive */
+@media (max-width:991px){
+     .top-header .col-lg-4 div{
+           display: flex;
+           justify-content: center !important;
+     }
+     .bottom-header .navbar-toggler{
+        filter: invert(1);
+     }
+     .bottom-header .navbar-nav{
+        text-align: left !important;
+        align-items: start !important;
+     }
+     .navbar-toggler:focus{
+        box-shadow: none !important;
+     }
+     .carousel-caption h1{
+        font-size: 50px;
+        line-height: 50px;
+     }
+     .carousel-caption h3{
+        font-size: 24px;
+     }
+     .carousel-caption p{
+        width: 100%;
+     }
+     .carousel-caption {
+        right: 0 !important;
+        bottom: 13.25rem !important;
+        left: 15% !important;
+    }
+    .homeicons .box{
+        margin-bottom: 30px;
+    }
+    .aboutSec {
+        padding-top: 885px !important;
+    }
+    .carousel-indicators{
+        margin-left: 6% !important;
+    }
+    .aboutinfo{
+        margin-left: 0 !important;
+        padding-bottom: 50px;
+        margin-top: 231px !important;
+    }
+    .aboutinfo h2{
+        font-size: 32px;
+    }
+    .aboutinfo button{
+        padding: 8px 26px !important;
+    }
+    .aboutinfo .shrink-0 i{
+        width: 45px !important;
+        height: 45px !important;
+        line-height: 45px !important;
+    }
+    .services h2{
+        font-size: 30px;
+    }
+    .services p:last-child{
+        width: 100% !important;
+    }
+    .service-box{
+        margin-bottom: 30px;
+    }
+    .progressSec{
+        padding: 30px 0;
+    }
+    .progressSec .progessBox{
+        margin-right: 0 !important;
+        margin-top: 16px !important;
+    }
+    .progressSec .row .col-lg-6{
+        padding-left: 25px;
+    }
+    .progressSec h2{
+        font-size: 32px;
+    }
+    .FaqSec h3{
+        font-size: 30px;
+    }
+    .FaqSec p:last-child{
+        width: 100%;
+    }
+    .contactSec{
+        margin-top: 0 !important;
+    }
+    .contact-form{
+        width: 100%;
+        padding: 43px 70px 30px 0;
+    }
+    .contact-form h3{
+        font-size: 30px;
+        margin-top: 25px;
+    }
+    .teamsec {
+        padding: 790px 0 7px 0;
+    }
+    .client h2{
+        width: 100%;
+    }
+    .client .clientHead {
+        position: inherit;
+        margin-top: 10px;
+    }
+    .client .slick-dots {
+        bottom: -24px !important;
+        width: 47% !important;
+        left: -11% !important;
+        right: 0;
+    }
+    .blog {
+        padding: 15px 0 30px 0;
+        position: relative;
+    }
+    .blog h2{
+        font-size: 33px;
+    }
+    .blog p:last-child{
+        width: 100%;
+    }
+    .mainBx{
+        margin-bottom: 30px;
+    }
+    .client .row{
+        margin-top: -50px !important;
+    }
+    .client {
+        margin-top: 40px;
+    }
+    .contactBg{
+        padding: 57px;
+        background-size: cover;
+    }
+    .top-footer div:first-child{
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    .top-footer div:last-child{
+        width: 100% !important;
+    }
+    .middle-footer .col-lg-2{
+        margin-top: 30px;
+    }
+    .middle-footer .middleLast .bi-geo-alt {
+        width: 65px !important;
+        height: 45px !important;
+        line-height: 45px !important;
+    }
+     .middle-box {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+    .bottom-footer div{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .bottom-footer p{
+        text-align:center;
+    }
+    .bottom-footer .last-p{
+        display: flex !important;
+        flex-direction: row !important;
+        
+    }
+}
