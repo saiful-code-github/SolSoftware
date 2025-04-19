@@ -5,22 +5,39 @@ import {
   CCollapse,
   CContainer,
   CDropdown,
-  CDropdownItem,
   CDropdownMenu,
   CDropdownToggle,
   CNavbar,
   CNavbarBrand,
   CNavbarNav,
   CNavbarToggler,
-  CNavItem,
-  CNavLink,
+  CNavItem
 } from '@coreui/react';
 import logo from '../assets/Images/logo1 (1).png'
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 export const Header = () => {
   const [visible, setVisible] = useState(false);
   const [nav, setNav] = useState(false);
+  const navigate = useNavigate();
+  //section redirect
+  const hanldeScrollToSection = (e, sectionId) => {
+    e.preventDefault();
+    if(window.location.pathname !== '/'){
+      navigate('/');
+      setTimeout(() => {
+          const section = document.getElementById(sectionId);
+          if(section) {
+            section.scrollIntoView({behavior: "smooth", block: 'start'})
+          }
+      },1000);
+    }else{
+      const section = document.getElementById(sectionId);
+      if(section){
+        section.scrollIntoView({behavior: "smooth", block: "start"} )
+      }
+    }
+  }
   //navbar scroll
   const navbarScroll = () => {
     if(document?.body?.scrollTop || document?.documentElement?.scrollTop > 100){
@@ -69,33 +86,45 @@ export const Header = () => {
         <CCollapse className="navbar-collapse" visible={visible}>
           <CNavbarNav className="ms-auto flex justify-center" style={{alignItems: "center"}}>
             <CNavItem>
-              <NavLink to="#"  className={({ isActive }) =>
+              <NavLink onClick={(e)=> hanldeScrollToSection(e, "homeSection")} to="/"  className={({ isActive }) =>
                   isActive
                     ? "active"
-                    : ""
+                    : "inactive"
                 }>
                 Home
               </NavLink>
             </CNavItem>
             <CNavItem>
-              <NavLink className={({ isActive }) =>
+              <NavLink onClick={(e)=> hanldeScrollToSection(e, 'aboutSection')} className={({ isActive }) =>
                   isActive
                     ? "active"
-                    : ""
-                } to="#">About Us</NavLink>
+                    : "inactive"
+                } to="aboutSection">About Us</NavLink>
             </CNavItem>
             <CNavItem>
-              <NavLink to="#">Services</NavLink>
+              <NavLink to="serviceSection" onClick={(e)=> hanldeScrollToSection(e, "serviceSection")} className={({ isActive }) =>
+                  isActive
+                    ? "active"
+                    : "inactive"
+                }>Services</NavLink>
             </CNavItem>
             <CDropdown variant="nav-item" popper={false}>
-              <CDropdownToggle color="secondary">Blog</CDropdownToggle>
+              <CDropdownToggle color="secondary" className={({ isActive }) =>
+                  isActive
+                    ? "active"
+                    : "inactive"
+                }>Blog</CDropdownToggle>
               <CDropdownMenu>
-                <NavLink to="#">Blog One</NavLink>
-                <NavLink to="#">Blog Two</NavLink>
+                <NavLink to="blogSection" onClick={(e)=> hanldeScrollToSection(e, "blogSection")} >Blog One</NavLink>
+                <NavLink to="blogSection" onClick={(e)=> hanldeScrollToSection(e, "blogSection")}>Blog Two</NavLink>
               </CDropdownMenu>
             </CDropdown>
             <CNavItem>
-              <NavLink to="#">Contact Us</NavLink>
+              <NavLink to="contactSection" onClick={(e)=> hanldeScrollToSection(e, "contactSection")} className={({ isActive }) =>
+                  isActive
+                    ? "active"
+                    : "inactive"
+                }>Contact Us</NavLink>
             </CNavItem>
           </CNavbarNav>
         </CCollapse>

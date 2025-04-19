@@ -9,6 +9,14 @@ header .collapse {
 .navbar-expand-lg .navbar-nav .dropdown:hover .dropdown-menu{
     display: block !important;
 }
+.active {
+    color:#03041c !important; /* Highlight active link */
+    font-weight: bold;
+  }
+  
+  .inactive {
+    color: #fff; /* Default color for inactive links */
+  }
 /* sticky */
 .bottom-header .sticky{
     position: fixed !important;

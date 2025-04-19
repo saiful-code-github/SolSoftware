@@ -33,7 +33,7 @@ const HomeContact = () => {
         console.log(input)
     }
   return (
-     <section style={{marginTop: "60px"}} className='contactSec'>
+     <section id='contactSection' style={{marginTop: "60px"}} className='contactSec'>
           <div className='contactBg'></div>
           <div className='contact-form'>
             <CContainer>

@@ -31,7 +31,7 @@ const HomeServices = () => {
 
     ]
   return (
-     <section style={{padding: "40px 0"}} className='services'>
+     <section id="serviceSection" style={{padding: "40px 0"}} className='services'>
           <CContainer>
                <div className='text-center' style={{marginBottom: "30px"}}>
                    <h2>We Provide Exclusive Service

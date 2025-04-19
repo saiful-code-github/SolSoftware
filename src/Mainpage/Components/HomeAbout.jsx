@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const HomeAbout = () => {
   return (
-    <section className='bg-[#eff4fa] pt-[100px] pb-[50px] aboutSec' style={{paddingTop: "120px", paddingBottom: "50px"}}>
+    <section id='aboutSection' className='bg-[#eff4fa] pt-[100px] pb-[50px] aboutSec' style={{paddingTop: "120px", paddingBottom: "50px"}}>
         <CContainer>
                <CRow>
                    <CCol lg={6}>

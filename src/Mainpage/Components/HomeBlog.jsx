@@ -39,7 +39,7 @@ const HomeBlog = () => {
         }
     ]
   return (
-     <section className='blog'>
+     <section id='blogSection' className='blog'>
          <CContainer>
               <div className='text-center'>
                   <h2>Latest News & Articles

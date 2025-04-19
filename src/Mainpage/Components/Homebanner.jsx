@@ -31,7 +31,7 @@ export const Homebanner = () => {
         }
     ]
   return (
-    <section>
+    <section id='homeSection'>
    <CCarousel controls indicators>
     {bannerInfo.map((item,index)=> {
         const {image, heading, headingTwo, headingSub, para} = item;
