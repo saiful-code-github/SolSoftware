@@ -54,6 +54,9 @@
         height: 45px !important;
         line-height: 45px !important;
     }
+    .aboutimgbox .img2{
+        right: 0;
+    }
     .services h2{
         font-size: 30px;
     }

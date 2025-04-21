@@ -23,6 +23,7 @@ export const Header = () => {
   //section redirect
   const hanldeScrollToSection = (e, sectionId) => {
     e.preventDefault();
+    setVisible(false);
     if(window.location.pathname !== '/'){
       navigate('/');
       setTimeout(() => {
@@ -43,7 +44,7 @@ export const Header = () => {
     if(document?.body?.scrollTop || document?.documentElement?.scrollTop > 100){
       setNav(true)
     }else{
-      setNav(false)
+      setNav(false)   
     }
   } 
   useEffect(()=>{
